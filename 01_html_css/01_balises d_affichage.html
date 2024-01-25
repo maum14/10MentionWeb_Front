@@ -110,6 +110,310 @@ h3{
     <h3>Le CSS dans une feuille de style externe</h3>
 
     <p>La dernière et meilleure façon pour faire du style est la méthode suivante : oncrée un dossier css avec un fichier style.css à l'intérieur il faudra alors lier nos deux fichieers grâce à la balise link. On pourra laors faire du style sur les éléménts qui se trouvent dans notre page. Exemple, on déclare que tous les paragraphes doivent être en bleu </p>
+    <hr>
+
+    <h2>Paraghe préformaté</h2>
+    <!-- Le txte est préformaté avec une typoraphie à chasse fixe ( toute les lettres occuppent le même largeur) -->
+
+<pre>  
+
+<p>
+Je 
+            suis
+        un
+            paragraphe
+                préformaté
+
+</p>
+
+</pre>
+
+<hr>
+
+<h2> Breaking row</h2>
+
+<h3> Demain, dès l'aube ...</h3>
+
+<!--  Pour mettre <br> à chaque fin de ligne sans avoir besoin de le saisir à chaque fois, on a cliquer chaque fin de ligne avec la touche
+ alt d'enfoncée et saisie le code <br> -->
+
+<p>
+    Demain, dès l’aube, à l’heure où blanchit la campagne,<br>
+    Je partirai. Vois-tu, je sais que tu m’attends.<br>
+    J’irai par la forêt, j’irai par la montagne.<br>
+    Je ne puis demeurer loin de toi plus longtemps.<br>
+    <br>
+    Je marcherai les yeux fixés sur mes pensées,<br>
+    Sans rien voir au dehors, sans entendre aucun bruit,<br>
+    Seul, inconnu, le dos courbé, les mains croisées,<br>
+    Triste, et le jour pour moi sera comme la nuit.<br>
+    <br>
+    Je ne regarderai ni l’or du soir qui tombe,<br>
+    Ni les voiles au loin descendant vers Harfleur,<br>
+    Et quand j’arriverai, je mettrai sur ta tombe<br>
+    Un bouquet de houx vert et de bruyère en fleur.<br>
+    
+    <pre>                               Victor Hugo, extrait du recueil «Les Contemplations» (1856)
+    
+    </pre> 
+        </p>
+        
+        <hr>
+
+        <h2> Des balises pour les citations </h2>
+
+        <p> Le poème <cite> Demain , dès l'aube </cite> de victor Hugo a été publié en 1856 </p>
+        <!--  La balise <cite> en HTML est utiliséée pour indiquer le titre d'une oeuvre créative , telle qu'un livre , un film une chanson ou autre production similaire -->
+
+            <p> William Shakespeare a écrit :  <q> être ou ne pas être , telle est la question  </q> </p>
+            <!-- La balise q= est utilisée pour marquer du texte comme une citation courte dans un document
+            le rendu est avec des guillemets -->
+
+            <h4> Un extrait de Marcel Proust </h4>
+            <blockquote>
+                « Longtemps, je me suis couché de bonne heure. Parfois, à peine ma bougie éteinte, mes yeux se fermaient si vite
+                que je n’avais pas le temps de me dire : « Je m’endors. » Et, une demi-heure après, la pensée qu’il était temps
+                de chercher le sommeil m’éveillait ; je voulais poser le volume que je croyais avoir encore dans les mains et
+                souffler ma lumière ; je n’avais pas cessé en dormant de faire des réflexions sur ce que je venais de lire, mais
+                ces réflexions avaient pris un tour un peu particulier ; il me semblait que j’étais moi-même ce dont parlait
+                l’ouvrage : une église, un quatuor, la rivalité de François Ier et de Charles Quint. Cette croyance survivait
+                pendant quelques secondes à mon réveil ; elle ne choquait pas ma raison mais pesait comme des écailles sur mes
+                yeux et les empêchait de se rendre compte que le bougeoir n’était plus allumé. Puis elle commençait à me devenir
+                inintelligible, comme après la métempsycose les pensées d’une existence antérieure ; le sujet du livre se
+                détachait de moi, j’étais libre de m’y appliquer ou non ; aussitôt je recouvrais la vue et j’étais bien étonné
+                de trouver autour de moi une obscurité, douce et reposante pour mes yeux, mais peut-être plus encore pour mon
+                esprit, à qui elle apparaissait comme une chose sans cause, incompréhensible, comme une chose vraiment obscure.
+                Je me demandais quelle heure il pouvait être ; j’entendais le sifflement des trains qui, plus ou moins éloigné,
+                comme le chant d’un oiseau dans une forêt, relevant les distances, me décrivait l’étendue de la campagne déserte
+                où le voyageur se hâte vers la station prochaine ; et le petit chemin qu’il suit va être gravé dans son souvenir
+                par l’excitation qu’il doit à des lieux nouveaux, à des actes inaccoutumés, à la causerie récente et aux adieux
+                sous la lampe étrangère qui le suivent encore dans le silence de la nuit, à la douceur prochaine du retour. »
+
+            </blockquote>
+            <!-- La balise <blockquote> est utilisée pour les citaion longues qui peuvent nécessiter une identtation ou mise en forme spéciale -->
+
+                    <hr>
+
+                    <h2> Les balises pour les listes</h2>
+
+                    <h3> La recette des crêpes</h3>
+                    <h4> 1- Les ingrédients de la pâte à crêpes </h4>
+
+                    <ul> 
+                        <!-- ul = unordred  list : liste non ordonnée -->
+                        <li>Farine</li>  <!-- li = List item : élément de liste -->
+                        <li>Oeufs</li>
+                        <li>Lait</li>
+                        <li>Sucre</li>
+                        <li> Une pince de sel</li>
+                    </ul>
+                    <!-- La balise il permet de créer une liste non ordonée. Il faut l'ouvrir en début de la liste et la fermer aprés le dernier élément de la liste
+                    La balise li permet de créer un elément de la liste 
+                Visuellement, des puces (les points noir)  apparaissent automatiquement (modifiable en css) -->
+
+                <h4> 2- Préparation </h4>
+                <ol>
+                <li>Verser le farine dans le bol, avec le sucre et la pincé de sel</li>
+                <li> Incorporer les oeufs les uns apres les autres</li>
+                <li>ajouter du lait</li>
+                <li>Mélanger bien et laisser reposer la pâte pendant 15 min</li>
+                <li> Chauffer la crêpiere avec une noisette  de beurre </li>
+                <li> Faites sauter les crêpes : hop !</li>
+                </ol>
+
+                <h3> Liste avec attribut "type" </h3>
+                <ol type"A"> 
+                    <!--li{Element numéroté de la liste $}*3 -->
+                    <li> Element numéroté de la liste 1</li>
+                    <li> Element numéroté de la liste 2</li>
+                    <li> Element numéroté de la liste 3</li>
+                </ol>
+
+                    <ol type"a">
+                    <h3> Liste avec attribut type= "a"</h3>
+                     <!--li{Element numéroté de la liste $}*3 -->
+                    <li> Element numéroté de la liste 1</li>
+                    <li> Element numéroté de la liste 2</li>
+                    <li> Element numéroté de la liste 3</li>
+                    </ol>
+
+                    <ol type"I">
+                    <h3> Liste avec attribut type="I" </h3>
+                     <!--li{Element numéroté de la liste $}*3 -->
+                    <li> Element numéroté de la liste 1</li>
+                    <li> Element numéroté de la liste 2</li>
+                    <li> Element numéroté de la liste 3</li>
+                     </ol>
+
+                    <ol type"i">
+                    <h3> Liste avec attribut type= "i"</h3>
+                     <!--li{Element numéroté de la liste $}*3 -->
+                    <li> Element numéroté de la liste 1</li>
+                    <li> Element numéroté de la liste 2</li>
+                    <li> Element numéroté de la liste 3</li>
+                </ol>
+
+                <!--  
+                    - Les éléments ul et ol ne peuvent contenir que des élement li
+                    - Chaque li peut contenir des éléments bloc (p, h2..)
+                    -Les listes peuvent s'imbriquer 
+                    - on peut mélanger ul et ol à condition de les fermer correctement
+
+                 -->
+                 <hr>
+
+                 <h2> Imbrication de liste</h2>
+                 <!-- une imbriquée -->
+                  <ul> 
+                    <li> Elément 1 de la liste 1</li>
+                    <li> Elément 2 de la liste 1</li>
+                    <ol>
+                        <li> Elément 1 de la liste 2 </li>
+                        <li> Elément 2 de la liste 2 </li>
+                    </ol>
+                </li>
+                <li> Elément 3 de la liste 1</li>
+            
+                  </ul>
+                  <hr>
+                  <h2> Exercice : de la liste </h2>
+
+                  <ol> Les Animaux 
+
+                  <li> 1- Animaux domestiques 
+
+                    <ol>
+                        <li>Chat</li>
+                        <li>Chien</li>
+                        <li>Lapin</li>
+                     </ol>
+                  </li>
+
+                  <li> 2-Les animaux Sauvages
+                  <ul> 
+                    <li>Tigre</li>
+                    <li>Lion</li>
+                    <li>Loup </li>
+                  </ul>
+                </li>
+            </ol> 
+
+<h2> Balise code</h2>
+<!-- La balise <code> est utilisée en HTML pour définir du texte en tant que code source informatique 
+    L'utilisation de cette balise permet de conserver la mise en forme du cide, telle qu'elle apparat dans un éditeur de texte, en persévrant l'indentation et en utilisant une police de caractères spécifique pour le code  -->
+
+    <!-- La balise <DOCTYPE> EST LA PREMI7RE BALISE D4UN DOCUMENT HTML -->
+        <p> La balise <code> &lt;!Doctype>&gt;</code> est la première balise d'un document HTML </p>
+
+        <!-- 
+        &gt; et &lt; sont des entités de caractères en HTML (ou entité HTML)  qui représentent respectivement les symboles ">" et "<"
+        Une entité HTML, est une suite caractères débutent par une esperluette (&) et se terminent par un point-virgule (;) utilisé pour affiché un caractère spécial  
+    -->
+    <!-- 
+        Voici quelques autres entités HTML couramment utilisées :
+
+            &amp; : Représente le symbole "&" (esperluette). Utilisé pour afficher le caractère "&" dans le texte sans être interprété comme le début d'une entité HTML.
+
+            &quot; : Représente le symbole '"' (guillemet double). Utilisé pour afficher un guillemet double dans le texte.
+
+            &apos; : Représente le symbole "'" (apostrophe). Utilisé pour afficher une apostrophe dans le texte.
+
+              &nbsp : Représente un espace insécable (non-breaking space). Utilisé pour insérer un espace qui ne peut pas être rompu par un saut de ligne. si 2 mots sont séparés par &nbsp  lorsqu'ils sont au bout d'une ligne et qu'il ne reste plus assez de place pour qu'un seule reste sur cette ligne, alors les 2 mots passe à la ligne suivante
+
+            &copy; : Représente le symbole de copyright ©.
+
+            &reg; : Représente le symbole de marque déposée ®.
+
+            &trade; : Représente le symbole de marque commerciale ™.
+
+            &deg; : Représente le symbole degré °.
+
+            &euro; : Représente le symbole de l'euro €.
+
+            &yen; : Représente le symbole du yen ¥.
+
+    -->
+
+ <h3> Exercice balise &lt;code> </h3>
+
+    <pre style="background-color: palevioletred;"> 
+
+        <p> 
+         <code> &lt;!DOCTYPE> </code>
+         <code> &lt;html> lang="fr"> </code>
+
+              <code> &lt;head> </code>
+                 <code> &lt;title> ma page web &lt;/title> </code>
+                <code>  &lt;/head> </code>
+        
+                &lt;body> 
+                 <code> &lt;h1> bienvenue sur ma page web! &lt;/h1> </code>
+                    <code> &lt;p> Ceci est un exemple de code HtML. &lt;/p> </code>
+                  <code> &lt;/body> </code> 
+
+            <code> &lt;/html> </code>
+    
+        </p>
+    </pre>
+
+<hr>
+<h2> Balise de manipulation du style</h2>
+
+<p> Ceci est un <span>texte en vert</span> </p>
+
+<!-- La balise <span> rn HTML est une balise universelle de type online. C'est balise de conteneur générque et neutre qui ne modifie pas le style ou la mmise en forme du contenu qu'elle entoure. La balise <span> est souvent utilisée en conjonction avec du CSS pour définir des styles de spécéfiques à des parties spécicifiques du texte -->
+
+    <hr>
+    <h2> Des balises pour styles du texte </h2>
+    <ol>
+            <li>
+              <code>  &lt; em> ...&lt;/em> </code> : (emphase) pour mettre en évidence un mot , le texte vas être rendu en italique</li>
+            <li>
+               <code> &lt;strong>..&lt;/strong></code> ; pour indiquer que le texte qu'elle entoure doit être rendu en tant que texte fort ou important, le texte vas être rendu en gras. </li>
+
+            <li>
+                 <code> &lt;s>...&lt;/s> </code>: utilisée pour indiquer que le texte doit être barré pour representer qu'il est non valise, a été supprimé ou obsolète. </li>
+
+            <li>
+                 <code >&lt;mark>...&lt;/mark> </code> : pour marquer ou surligner du texte dans une zone de texte, le mot sera généralement surligné pas les navigateurs pour indiquer son importance
+            </li>
+
+    </ol>
+    <p> Bonjour , ceci est mon premier fichier HTML, alors <em> soyer indulgent s'il vous plaît </em></p>
+    
+    <p> Bonjour , ceci est mon premier fichier HTML, alors <strong> soyer indulgent s'il vous plaît </strong> </p>
+
+    <p><s>Ce texte n'est plus d'actualité </s></p>
+    <p>Le texte suivant contient une information <mark>important</mark></p>
+
+    <hr>
+    <h> La balise kbd</h>
+    <!-- La balise knd est une abrévation de keyboard . Cette balise permettra donc de faire comprendre au navigateur que l'on parle d'une manupulation du clavier  -->
+
+    <p>poue sauvegarder un document j'utilise le raccourci <kbd> ctrl + s </kbd></p>
+
+    <hr>
+    <h2> Les bzlises de définition </h2>
+    <dl><!--dl= definition list ( liste definition)-->
+        <dt> Ecole: </dt><!--dts= definition term(terme à définir)-->
+        <dd>Lieu d'apprentissage pour les personnes de 6 à 11ans </dd><!--définition-->
+
+        <dt> Lycée:</dt>
+        <dd>leu d'apprentissage pour les personnes de 15 à 18 ans </dd>
+        
+    </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
