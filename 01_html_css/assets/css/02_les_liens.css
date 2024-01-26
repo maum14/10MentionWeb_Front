@@ -1,0 +1,30 @@
+body{
+
+    background-color: peachpuff;
+}
+
+a{
+    text-decoration: none; /* text_decoration: permet de changer la décoration de texte, avec la valeur "none" je désactive le surlignement */
+    color: powderblue;
+}
+
+
+/* Une pseudo classe est un mot clé préfixé par deux ppints , qui s'ajoute au selecteur pour appliquer un style à un élément dans un cas particulier 
+ */
+
+
+ /* :hover désigne un objet suevolé par le curseur de la souris ça peut être un lien ou n'importe quel élément html*/
+a:hover { 
+    text-decoration: underline;
+    color:papayawhip;
+    background-color: palegoldenrod;
+
+}
+
+/*  La pseudo classe ":visited " désigne un lien dont la page cible a déjà été visité */
+
+a:visited {  
+
+    color: lightsalmon;
+
+}
