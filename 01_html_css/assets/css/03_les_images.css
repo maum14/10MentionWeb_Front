@@ -72,4 +72,31 @@ div p {
 
     background-color: black (5, 19, 21, .6);
     padding: 50px;
-   
+}
+
+/* style pour la classe nommée "imageCheval" */
+.imagecheval{
+    /* la propriété transition permet de spécifier une transition animée entre les états d'un élément */
+    transition: 1s;
+}
+
+.imagecheval:hover{
+    /* la propriété transforme avec la fonction scale () , permet de modifier l'echelle d'un élément en modifiant sa taille. la fonction scale() prend un argument, qui est le facteur d'echelle */
+
+    transform: scale(1.1);
+
+}
+/* style pour la classe nommée "imageDauphin" */
+
+.imageDauphin{
+
+    display: block;  /* *Définit l'affichage de l'élément en tant qur bloc*/
+    margin: 30px auto;
+    transition: transform 1s ;
+
+}
+.imageDauphin:hover{
+    transform: rotate(-10eg); /*Fait tourner l'image de - 100g lorsqu'elle est survolée */
+} 
+
+
