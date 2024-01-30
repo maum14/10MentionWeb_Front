@@ -41,12 +41,51 @@ div.main {
     padding: 20px 50px;
 }
 
-div.section1{
+div.section1, div.section2 {
 
     text-align: center;
 }
 
-div.section1 img{
+div.section1 img {
 
     border-radius: 20px;
+}
+
+div.section2{
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+} 
+div.section2 p {
+    display: inline-block;
+    border: solid 2px  #562145;
+    width: 60%;
+    padding: 20px;
+    background-color: black;
+
+}
+div.piedDePage ul s{
+    border: solid 2px #562145;
+    margin-top: 20px;
+
+}
+div.piedDePage{
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+div.piedDePage ul li {
+    margin-bottom: 20px;
+}
+div.piedDePage ul li a {
+    color: #562145;
+    background-color: #d9a9db;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+
 }
