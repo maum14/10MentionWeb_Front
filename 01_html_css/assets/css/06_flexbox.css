@@ -1,0 +1,77 @@
+/* feuille de style pour la page de flexbox*/
+p{
+    font-size: 20px;
+}
+
+div{
+    font-weight: bolder;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.style div{
+
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    line-height: 150px; /* line heiight nous permet de définire l'espacement entre les lignes d'ub paragraphe dans un élément*/
+    /* dans le cas que l'on a un seul mot dans un éléent , ob peut l'utiliser afin de le centre sur l'axe vertical*/
+}
+
+.style :first-child {
+    background-color: orange;
+}
+
+.style :nth-child(2) {
+    background-color: blue;
+}
+.style :last-child {
+    background-color: green;
+}
+
+span{
+    color: darkmagenta;
+}
+
+.style div{
+
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    line-height: 150px; /* line heiight nous permet de définire l'espacement entre les lignes d'ub paragraphe dans un élément*/
+    /* dans le cas que l'on a un seul mot dans un éléent , ob peut l'utiliser afin de le centre sur l'axe vertical*/
+}
+
+.style :first-child {
+    background-color: orange;
+}
+
+.style :nth-child(2) {
+    background-color: blue;
+}
+.style :last-child {
+    background-color: green;
+}
+
+#conteneurB {
+    display: flex;
+}
+
+#conteneurC{
+    display: flex;
+    flex-direction: row;
+}
+
+#conteneurD{
+    display: flex;
+    flex-direction: column;
+}
+
+#conteneurE{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#conteneurF{
+    display: flex;
+    flex-direction: column-reverse;
+}

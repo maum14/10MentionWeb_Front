@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flexbox">
+    <meta name="author" content="Maureene Marolany">
+    <link rel="stylesheet" href="assets/css/06_flexbox.css">
+    <title>Flexbox</title>
+
+</head>
+<body>
+    
+<header>
+    <h1>Flexbox</h1>
+
+</header>
+
+<main>
+    <section>
+    <h2>A- comportement normal</h2>
+        <p>Le principe de la mise en page avec Flexbox est simple: vous définissez un conteneur, et à l'interieur vous placez plusieurs élément. </p>
+  
+        <div class="style" id="conteneurA">
+             <div>Element1</div>
+            <div>Element2</div>
+             <div>Element3</div>
+    </div>
+    </section>
+
+    <h2> b- ajout du flex au conteneur </h2>
+
+  <p><span>
+    dysplay :flex </span>-> appliquer sur le conteneur, les blocs intérieurs se positinnent sur le côté
+  </p>
+
+<div class="style"id="conteneurB">
+
+  <div>Element1</div>
+  <div>Element2</div>
+   <div>Element3</div>
+
+
+</div>
+
+<section>
+<h2>c- direction</h2>
+
+<p>flexbox nous premet d'agencer ces éléments dans le sens que l'on veut. Avec <span>flex-direction</span>,on peut les possitionner verticalement ou encore les inverser. il peut prendre les valeurs suivantes: <br>
+
+  -> row : organisés sur une ligne (par défaut) <br>
+  -> column : organisés sur une colonne <br>
+  -> row-reverse : organisés sur une ligne mais en ordre inversé <br>
+  -> column-reverse : organisé sur une colonne , mais en ordre inversé <br>
+
+</p>
+<h3> Row </h3>
+<div class="style"id="conteneurC">
+
+ <div>Element1</div>
+ <div>Element2</div>
+  <div>Element3</div>
+</div>
+
+
+  <h3>column</h3>
+ <div class="style"id="conteneurD">
+<div>Element1</div>
+ <div>Element2</div>
+  <div>Element3</div>
+
+ </div>
+
+     <h3> Row-reverse</h3>
+     <div class="style"id="conteneurE">
+
+      <div>Element1</div>
+      <div>Element2</div>
+       <div>Element3</div>
+      </div>
+
+       <h3> column-reverse</h3>
+     <div class="style"id="conteneurE">
+      <div>Element1</div>
+      <div>Element2</div>
+       <div>Element3</div>
+      </div>
+
+
+</section>
+
+
+
+</main>
+</body>
+</html>
