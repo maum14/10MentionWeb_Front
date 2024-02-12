@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cbd285;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    font-weight: bold;
+}

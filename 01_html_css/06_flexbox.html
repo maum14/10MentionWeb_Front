@@ -55,7 +55,7 @@
 
 </p>
 <h3> Row </h3>
-<div class="style"id="conteneurC">
+<div class="style"id="conteneurRow">
 
  <div>Element1</div>
  <div>Element2</div>
@@ -64,7 +64,7 @@
 
 
   <h3>column</h3>
- <div class="style"id="conteneurD">
+ <div class="style"id="conteneurcolumn">
 <div>Element1</div>
  <div>Element2</div>
   <div>Element3</div>
@@ -72,7 +72,7 @@
  </div>
 
      <h3> Row-reverse</h3>
-     <div class="style"id="conteneurE">
+     <div class="style"id="conteneurRowReverse">
 
       <div>Element1</div>
       <div>Element2</div>
@@ -80,7 +80,7 @@
       </div>
 
        <h3> column-reverse</h3>
-     <div class="style"id="conteneurE">
+     <div class="style"id="conteneurcolumnreverse">
       <div>Element1</div>
       <div>Element2</div>
        <div>Element3</div>
@@ -89,7 +89,162 @@
 
 </section>
 
+<section>
+  <h2>D- Alignement</h2>
+  <p>Les éléments sont organisés soit horizontalement (par défaut), soit verticalement.</p>
+        <ul>
+            <li>si vos éléments sont organisés horizontalement : l'axe principale (main axis) est l'axe horizontale,
+                l'axe secondaire (cross axis) est l'axe vertical.</li>
+            <li>si vos éléments sont organisés verticalement : l'axe principale (main axis) est l'axe verticale, l'axe
+                secondaire (cross axis) est l'axe horizontale.</li>
+        </ul>
+        <h3>1 - alignement sur l'axe principal</h3>
+        <p>afin d'aligner nos éléments sur l'axe principal: on utilise la propriété du flex <span> justify-content </span></p>
+        <p>Cette propriété gère la distribution des emplacements des flex-items suivant la place disponible dans le flex-container. elle le fait , selon le positionnement ede l'axe principal</p>
+      <ul>
+        <li> flex-start:  aligner au début ( par défaut )</li>
+        <li>flex-end : aligner a la fin </li>
+        <li>center : aligner au centre </li>
+        <li>space between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux )</li>
+        <li>space-around: les élément sont étirés sur tout l'axe mais ils laissent aussi de l'espace sur des extrémités</li>
+        <li>space-evenly : les élément son répartis uniformément dans le conteneur d'alignement le long d el'axe principal</li> 
+      </ul>
+      <h4>flex-start - direction horizentale</h4>
+      <div class="style"id="conteneurflex-start">
+        <div>Element1</div>
+        <div>Element2</div>
+        <div>Element3</div>
+       </div>
+       <h4>flex-start - direction horizentale</h4>
+       <div class="style"id="conteneurflex-end">
+            <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+        </div>
+        <h4>center - direction horizentale</h4>
+        <div class="style"id="conteneurcenter">
+             <div>Element1</div>
+             <div>Element2</div>
+             <div>Element3</div>
+         </div>
+         <h4>space between - direction horizentale</h4>
+         <div class="style"id="conteneurSpace-between">
+              <div>Element1</div>
+              <div>Element2</div>
+              <div>Element3</div>
+          </div>
+          <h4>space space-around - direction horizentale</h4>
+          <div class="style"id="conteneurSpace-around">
+               <div>Element1</div>
+               <div>Element2</div>
+               <div>Element3</div>
+           </div>
+           <h4>space space-evenly - direction horizentale</h4>
+           <div class="style"id="conteneurSpace-evenly">
+                <div>Element1</div>
+                <div>Element2</div>
+                <div>Element3</div>
+            </div>
+            <hr>
+            <p> Si mes élément sont dans une direction verticale, est l'axe verticale</p>
+            <h4>space flex-start - direction verticale</h4>
+            <div class="style"id="conteneurflex-start-vertical">
+                 <div>Element1</div>
+                 <div>Element2</div> 
+                 <div>Element3</div>
+             </div>
+             <h4>space flex-start - direction verticale</h4>
+            <div class="style"id="conteneurflex-end-vertical">
+                 <div>Element1</div>
+                 <div>Element2</div> 
+                 <div>Element3</div>
+             </div>
+ 
+             <h4>center - direction verticale</h4>
+             <div class="style"id="conteneur center">
+                  <div>Element1</div>
+                  <div>Element2</div> 
+                  <div>Element3</div>
+              </div>
+  
+              <h4>between - direction verticale</h4>
+              <div class="style"id="conteneur between">
+                   <div>Element1</div>
+                   <div>Element2</div> 
+                   <div>Element3</div>
+               </div>
+               <h4>space-around - direction verticale</h4>
+               <div class="style"id="conteneurSpace-around">
+                    <div>Element1</div>
+                    <div>Element2</div> 
+                    <div>Element3</div>
+                </div>
+    
+ 
+                <h4>space-evenly- direction verticale</h4>
+                <div class="style"id="conteneurSpace-evenly">
+                     <div>Element1</div>
+                     <div>Element2</div> 
+                     <div>Element3</div>
+                 </div>
 
+                 <h3>2- Alignement sur l'axe secondaire</h3>
+                 <p>afin d'aligner nos éléments sur bl'axe secondaire: on utilise la propriété du flex <span>align-items</span></p>
+                 <p>Elle peit prendre comme valeur:</p>
+                 <ul>
+                  <li>flex-start: aligner au début</li>
+                  <li>flex-end: aligner à la fin</li>
+                  <li>center aligner au centre</li>
+                  <li>stretch: les éléments sont étirés sur tout l'axe (valeur par défaut)</li>
+                  <li>baseline: aligne sur la ligne de base</li>
+                 </ul>
+                 <h4>Flex-start - direction horizontale</h4>
+        <div class="style" id="conteneur-AI-FS-H">
+            <div>Elément 1</div>
+            <div>Elément 2</div>
+            <div>Elément 3</div>
+        </div>
+        <h4>Flex-end - direction horizontale</h4>
+        <div class="style" id="conteneur-AI-FE-H">
+            <div>Elément 1</div>
+            <div>Elément 2</div>
+            <div>Elément 3</div>
+        </div>
+        <h4>Center - direction horizontale</h4>
+        <div class="style" id="conteneur-AI-C-H">
+            <div>Elément 1</div>
+            <div>Elément 2</div>
+            <div>Elément 3</div>
+        </div>
+        <h4>Stretch - direction horizontale</h4>
+        <div class="style" id="conteneur-AI-S-H">
+            <div>Elément 1</div>
+            <div>Elément 2</div>
+            <div>Elément 3</div>
+        </div>
+
+        <h4>Baseline- direction horizontale</h4>
+        <div class="style" id="conteneur-AI-B-H">
+            <div>Elément 1</div>
+            <div>Elément 2</div>
+            <div>Elément 3</div>
+        </div>
+  
+        <h3> 3- alignement d'un seul élément</h3>
+        <p>il est possible de faire une exception pour un seul élément sur l'axe secondaire avec <span>align-self</span></p>
+
+      <h4>align-self: flex-end</h4>
+      <div class="sstyle" id="conreneurE-AS">
+        <div>Elément 1</div>
+        <div>Elément 2</div>
+        <div>Elément 3</div>
+
+
+      </div>
+     
+  
+        
+</section>
 
 </main>
 </body>
