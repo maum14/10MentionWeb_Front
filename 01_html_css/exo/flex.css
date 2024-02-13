@@ -14,3 +14,19 @@ nav a {
     color: #333;
     font-weight: bold;
 }
+
+.z1{
+    display: flex;
+   justify-content: center;
+   background-color: #ffd6d6;
+   padding: 20px;
+   margin: 70px;
+   font-weight: bold;
+}
+
+.z2{
+    display: flex;
+    justify-content: center;
+    background-color:  #f7f39a;
+    margin: 70px;
+}
