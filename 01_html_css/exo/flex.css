@@ -19,7 +19,7 @@ nav a {
 
 /***************************************************/
 section{
-    width: 50px;
+    width: 900px;
     margin: 100px auto;
 
 }
@@ -90,3 +90,5 @@ h3{
 #zoning2  div div p {
     width: 100;
 }
+
+#zoning2 div :first-child

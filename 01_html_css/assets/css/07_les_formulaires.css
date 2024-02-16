@@ -1,0 +1,54 @@
+/* @font-face: c'est une règle (at-rule) CSS spéciale qui permet de définir des polices personnalisées pour être utilisé */
+@font-face{
+    font-family: "Jacquarda Bastarda 9";
+    src: url(../Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf);
+
+}
+
+body{
+    background-color: azure;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #4d4dc8;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 700;
+    font-style: italic;
+   
+} 
+
+  fieldset {
+    border: thick double #0a5f81 ;
+    margin-top: 10px;
+    padding: 30px;
+
+  }
+
+  legend{
+   color: steelblue;
+   background-color: #fff;
+   border: 1px solid slateblue;
+   border-radius: 25px;
+   padding: 10px;
+
+  }
+
+  div{
+    padding: 10px 0;
+  }
+
+  .envoie {
+
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .envoie input {
+    background-color:  cadetblue;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #fff;
+  }
