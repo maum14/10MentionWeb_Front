@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    background-color: #fff6e9;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffe7e7;
+}
+h1{
+    color: #211c6a;
+    text-align: left;
+    
+}
+
+table{
+border: 3px solid black;
+width: 100%;
+margin-top: 50px;
+padding: 100%;
+background-color: black;
+border-collapse: collapse;
+}
+
+caption{
+    font-weight: bolder ;
+    color: #6e2142;
+
+}

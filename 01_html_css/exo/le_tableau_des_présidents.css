@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffe7e7;
+}
+
+
+table{
+    border: 3px solid #6e2142;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff6e9;
+    border-collapse: collapse;
+}
+
+
+caption{
+
+    color: #6e2142;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th, td {
+    border: 3px solid #6e2142;
+}
