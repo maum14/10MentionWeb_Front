@@ -1,16 +1,46 @@
 *{
     box-sizing: border-box;
-    text-decoration: none;
+   
+   
 }
 
-header div:first-child{
+header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    
 }
 
+header div:first-child {
+  background-color: #5f9ea0;
+   
+}
+
+header div:nth-child(2){
+    background-color: #008b8b;
+}
+
+header div:last-child{
+    background-color: #00ced1;
+}
+ 
+header div{
+    width: 33.33%;
+    height:5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
 nav{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px;
+    width: 100%;
+     display: flex; 
+    justify-content: center;
+    background-color:#ffebcd ;
 
+}
+nav a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
 }

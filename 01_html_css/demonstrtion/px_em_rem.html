@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px - % - em - rem </title>
+    <style>
+        /*1 - Pixels (px) :
+            Les pixels sont des unités de mesure fixes et absolues.
+            Un pixel représente un point sur l'écran d'un appareil.
+            Les valeurs en pixels ne changent pas en fonction de la taille de l'écran ou des paramètres du navigateur.
+            Par exemple, font-size: 16px; définit la taille de la police à 16 pixels.*/
+            *{
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 16px;
+                /* En définissent la taille de notre document en pixels, on constae qu'elle reste fixe lorsque nous modifions les paramètres de la taille de la police au niveau du navigateur .*/
+               /* 2 - Pourcentage (%) :
+            Les pourcentages sont des unités relatives par rapport à un élément parent.
+            Ils expriment une proportion de la taille de l'élément parent.
+            Par exemple, width: 50%; définit la largeur d'un élément à 50% de la largeur de son conteneur parent.*/
+
+        /*    3 - Em (em) :
+            L'unité "em" est également une unité relative.
+            Elle est basée sur la taille de la police de l'élément parent.
+            Un em équivaut à la taille de la police actuelle de l'élément.
+            Par exemple, si la taille de police de l'élément parent est de 16px, font-size: 2em pour un élément enfant signifie que la taille de police sera de 32px (2 * 16px).*/
+
+           /* 4 - Rem (rem) :
+            L'unité "rem" est similaire à "em", mais elle est basée sur la taille de police de l'élément racine (root).
+            Cela signifie que la taille de police définie sur l'élément racine (généralement <html>) est utilisée comme référence pour tous les éléments de la page.
+            Par exemple, si la taille de police de l'élément racine est de 16px, font-size: 2rem; pour un élément enfant signifie que la taille de police sera de 32px (2 * 16px), peu importe la taille de police des éléments parents. */
+            }
+
+
+            div {
+             width: 80%0;
+             margin: 0 auto; 
+            } 
+            /* Utilisation px */
+
+            h1 { 
+                margin: 50px 0;
+                /* font-size: 40px; */
+                font-size: 2.1;
+            }
+            /* utilisation % */
+             p {
+                    font-size: 1.375;
+              /*  font-size: 200%;  2 fois la taille du parent*/
+             }
+
+            /*Utilisation em */
+
+            ul {
+                /* font-size: 2em; */
+            }
+
+            a {
+                background-color: pink;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+                /* font-size: 20px;
+                padding: 1em; */
+            }
+            a:hover {
+                background-color: #000;
+                color: #fff;
+            }
+            /* Utilisation de rem */
+             
+             :root {
+                /* 16px = 1 rem =100 % */
+                font-size: 62.5%;
+                /*10px= 0.65rem = 62.5% */
+
+             }
+
+             .rem {
+                /* font-size: 1.375rem; */
+                font-size: 2.2rem;
+             }
+            
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Démonstration pour es unités px, %, em et rem</h1>
+        <p class="rem">Je suis en rose</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit taciti senectus enim sem, torquent et euismod volutpat odio facilisi cursus praesent erat fusce ornare, laoreet primis porttitor sociis at condimentum hendrerit suspendisse accumsan tempus. Donec ullamcorper etiam egestas quis purus dapibus hendrerit montes vel dictum nibh, nunc semper proin scelerisque auctor varius habitasse elementum sagittis vivamus. Facilisis laoreet hendrerit vehicula tristique dui praesent faucibus nunc sed molestie sapien, dapibus non leo condimentum ad bibendum mus varius tincidunt.</p>
+        <ul>
+            <li>Liste 1</li>
+            <li> Liste 2</li>
+            <li>
+                <ul>
+                    <li>Liste 1</li>
+                    <li>Liste 2</li>
+                    <li>Liste 3</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" class="btn">Envoyer</a>
+    </div>
+
+    
+</body>
+</html>
