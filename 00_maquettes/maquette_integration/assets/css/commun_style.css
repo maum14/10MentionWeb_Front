@@ -1,0 +1,61 @@
+/* feuille de style avec le reset */
+@import url(reset.css);
+
+/* lien vers google font pour la typographie */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    --color_black: #191919;
+    --color_White: #fff;
+    --font_lora: "lora", serif;
+
+}
+body {
+    background-color:var(--color_black);
+    color: var(--color_White);
+
+}
+
+a, h1 {
+    font-family: var(--font_lora);
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    /* Dans le header j'applique le display avec la valeur flex afin de gerer l'emplacement de mes éléments sur l'axe principale (axe horizntale) et l'axe */
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    border-bottom: 1rem solid rgba(225, 255, 255, .1);
+    box-shadow: 0 .4rem .8rem rgba(225, 255, 255, .1);
+}
+
+header img {
+    width: 60px;
+}
+/* header > a { j'applique le flex afin de centrer l'image dans l'élément a */
+    header > a {
+    display: flex;
+    align-items: center;
+}
+
+
+
+header nav a {
+    font-size: 1.8rem;
+    color:gray;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    scale: 1;
+    transition: all linear 0.2s;
+}
+
+header nav a:hover {
+
+    color: var(--color_White);
+    scale: 1.2;
+
+}
