@@ -34,14 +34,26 @@ header {
 
 header img {
     width: 60px;
+    
 }
+
+
+header nav {
+    display: flex;
+}
+
+
 /* header > a { j'applique le flex afin de centrer l'image dans l'élément a */
     header > a {
     display: flex;
     align-items: center;
 }
-
-
+/* 
+    https://www.w3schools.com/css/css3_transitions.asp
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed
+    all : la transition s'applique sur toutes les propriétés qui ont les valeurs changées   
+    linear : spécifie un effet de transition avec la même vitesse du début à la fin
+    un délai : (en secondes) pour l'effet de transition. */
 
 header nav a {
     font-size: 1.8rem;
@@ -51,6 +63,7 @@ header nav a {
     margin-left: 4rem;
     scale: 1;
     transition: all linear 0.2s;
+    border-radius: 8px;
 }
 
 header nav a:hover {
@@ -58,4 +71,36 @@ header nav a:hover {
     color: var(--color_White);
     scale: 1.2;
 
+}
+
+/************************************************** FOOOTER **************************************************************************/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    padding: 40px;
+    color: var(--color_White);
+    border-bottom: 1rem solid rgba(225, 255, 255, .1);
+    box-shadow: 0 .4rem .8rem rgba(225, 255, 255, .1);
+
+}
+
+footer a {
+    color: var(--color_White);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    width: 33.33%;
+
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(225, 255, 255, .2);
+    border-right: 1px solid rgba(225, 255, 255, .2);
 }
