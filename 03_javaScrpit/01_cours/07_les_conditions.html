@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditons en JS</title>
+</head>
+<body>
+
+    <script>
+
+        document.write("<h2> Les opérateurs de comparaison pour les structures conditionnelle </h2>");
+        //Les opérateurs de comparaison pour les structures conditionnelle
+
+        /*
+
+
+            > Strictement supérieur
+            < Strictement inférieur
+            >= supérieur ou égales
+            <= inférieur ou égale
+            == pour faire une comparaison de valeur // Il permet de vérifier que les VALEURS de 
+                variables sont identiques
+            === pour faire une comparaison de vlauer et de type // signifie "STRICTEMENT Egale A " // il peremt de vérifeir la VALEUR ET le TYPE
+            != différent de en valeur
+            !== STRICTEMENT différent de (VALEUR et TYPE)
+
+
+        */
+
+        let br = '<br>'
+        let nbr1 = 1, nbr2 = 3;
+
+        document.write(nbr1 > nbr2); //false
+        document.write(br);
+        document.write(nbr1 >= nbr2); //false
+        document.write(br);
+        document.write(nbr1<= nbr2 )//false
+     
+        let nbr3 = 2, nbr4 = "2";
+
+        document.write(br);
+        document.write(nbr3 > nbr4); //false
+        document.write(br);
+        document.write(nbr3 == nbr4); //true
+        document.write(br);
+        document.write(nbr3 === nbr4); //false
+        
+        document.write("<h2>Opérateurs logiques</h2>")
+
+        //Opérateurs logiques
+        
+        /*
+            AND -> &&
+            OR  -> ||
+            NOT -> !
+
+        */
+            // Opérateur AND : il evalue le résultat en TRUE si les expression sont TRUE, si l'une des deux expressions testé est false alors le résultat sera FALSE
+            document.write(br);
+
+            document.write(true && true); //true
+            document.write(br);
+            document.write(true && false); // false
+            document.write(br);
+            document.write(false && false); //false
+
+            // Opérateur OR : il evalue le resultat en TRUE si une ou deux expressions sont true, si les deux  expression sont False alors le resultat sera FALSE 
+
+            document.write(br);
+            document.write(true || true); // true
+            document.write(br);
+            document.write(true || false); // true
+            document.write(br);
+            document.write(false || false); // false
+
+            // Opérateur NOT : Il transforme ce qui est TRUE en FALSE et ce qui FALSE en TRUE 
+            document.write(br);
+            document.write(!true); // false
+            document.write(br);
+            document.write(!false); // true
+            document.write(br);
+            
+
+            document.write("<h2>Structure conditionnelle if, else</h2>");
+
+            //--------------------------
+                // SYNTAXE 
+            //------------------------
+
+            // if else
+
+            if (condition) {
+                /* le code si la condition est VRAIE*/
+            } 
+//-------------------------------------------------------------------------
+            //if else
+            if (condition) {
+                /* le code  si la condition est VRAIE */
+              } else {
+                /* le code si la condition est FAUSSE */ 
+            }
+
+//------------------------------------------------------------------------
+            // if else if else 
+            if (conditon) {
+                /* /* le code  si la condition est VRAIE */
+             } else if(condition) {
+                 /* le code  si la condition est VRAIE */
+            
+            }else {
+                /* le code et les autres conditions sont FAUSSES*/
+            }
+            
+    </script>
+
+</body>
+</html>
