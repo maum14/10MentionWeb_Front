@@ -54,23 +54,23 @@
   
         
            //   let a = 10, b = 5, c = 2;
-        if(a>b) {
-            document.write("A est bien supérieur à B ");
-            document.write(br);
-        } else {
-            document.write("A est inferieur  B")
-            document.write(br);
-        }
+       // if (a>b) {
+         //   document.write("A est bien supérieur à B ");
+           // document.write(br);
+       // } else {
+          //  document.write("A est inferieur  B")
+          //  document.write(br);
+       // }
 
 
 
-        if (a>b && b>c) { // True && true -> True
-            document.write("OK Pour les deux conditions");
-            document.write(br);
-         } else {
-            document.write ("Une de ces deux conditions est fausses")
-            document.write(br);
-         }
+       // if (a>b && b>c) { // True && true -> True
+        //    document.write("OK Pour les deux conditions");
+      //      document.write(br);
+       //  } else {
+        //    document.write ("Une de ces deux conditions est fausses")
+        //    document.write(br);
+        // }
 
 
 
@@ -78,10 +78,10 @@
 
          if (a=9 || b<9) {
             document.write("OK pour au moins des deux conditions");
-            document.write(br);
+            document.write("<br>");
          } else {
             document.write("Les deux conditions sont fausses");
-            document.write(br);
+            document.write("<br>");
          }
          
          if (a == 9 || b < 9 ) {
@@ -95,16 +95,16 @@
 //  En cas d'echec, une alerte m'informe du problème.
 //  Si tout se passe bien, un message de bienvenue m'accueille.
 
-         let prenom =prompt("Veuillez saisir votre nom");
-         let pas = prompt("Veuillez saisir votre âge");
+        // let prenom =prompt("Veuillez saisir votre nom");
+        // let pas = prompt("Veuillez saisir votre âge");
            
-         if (prenom == "Maureene"&& age == "24") {
+         //if (prenom == "Maureene"&& age == "24") {
                  
-            alert("Bienvenue Maureene !!!!");
+          //  alert("Bienvenue Maureene !!!!");
             
-         } else {
-            alert("IL y'a un problème")
-         }
+       //  } else {
+        //    alert("IL y'a un problème")
+        // }
 
         
             //Exercice 5
@@ -122,6 +122,56 @@
         /*
             Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
             En utilisant le boucle for
+         
+
+            Le manège démarre
+            C'est le tour numéro 1
+            C'est le tour numéro 2
+            ...
+            C'est le tour numéro 10
+            Le manège s'arrête
+        */
+      
+        let tab2 = [ "maria","miguel","miles","axel","hobbie"] // 5 élément tab1.length = 5
+                    // 0        1        2       3       4
+
+        let tab1 = ["brown","frost","o'hara","parker","morales"]
+        let tab3= [15,30,18,25,34]
+
+        for (let i = 0; i<=5; i++ ) {  //ou
+       // for (let i = 0; i<=5; i++ )  
+
+            document.write(`${tab1[i]} ${tab2[i]} ${tab3[i]} "<br>"`);
+
+}
+
+// deuxième façon de faire
+ let tab4 = [tab1, tab2 , tab3] ;
+ 
+ for (let k=0; k < tab4[0].length; k++){
+
+ }
+ document.write (`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
+     
+
+ for (let t = 1; t <= 10 ; t++)
+ 
+ if (t < 2) {
+    document.write("le manège démarre")
+ }
+else if (t <= 10) {
+    document.write("C'est le tour "+ t + " <br>")
+
+}
+ else if (t < 9) {
+    document.write("le manège s'arrête")
+}
+
+ // Exercice 6
+
+        /*
+            Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+            En utilisant la boucle for avec la condition if
 
 
             Le manège démarre
@@ -131,6 +181,156 @@
             C'est le tour numéro 10
             Le manège s'arrête
         */
+
+        // for (let t = 1; t <= 10 ; t++) {
+            
+        //     if (t < 2) {
+                
+        //         document.write(" le manège démarre"+ "<br>")
+        //     }
+        //     if (t <= 10) { //10
+                
+        //         document.write("C'est le tour n°" + t + "<br>")
+        //     }
+        //     if (t > 9) { //10
+                
+        //         document.write(" le manège s'arrête")
+        //     }
+        // }
+
+        for ( let i = 0; i <= 11; i++ ) {
+
+if (i == 11) {
+    document.write(`C'est fini, le tour de manège est <strong>terminé</strong> <br>`);         
+}
+else if (i == 0) {
+    document.write(`Le manège <strong>démarre</strong> <br>`);
+}
+else {
+    document.write(`C'est le tour de manège numéro <strong>${i}</strong> <br>`); 
+}        
+}
+
+
+// Exercice 7
+/* 
+Créer un script qui permet de :
+    - récupérer la moyenne de BAC à votre utilisateur
+    - vérifier si l'utilisateur a bien renseigner un nombre, 
+    si un nombre :
+        => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+        => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+        => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+        => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+    Si ce n'est pas un nombre :
+        =>afficher  "Vous n\avez pas saisi de nombre !"   
+*/
+
+
+let moyenne = prompt('Votre moyenne');
+
+if (!isNaN(moyenne)) { // si un nombre 
+
+if (moyenne >= 0 && moyenne < 10) {
+
+document.write("tu es recalé");
+
+} else if(moyenne >= 10 && moyenne <= 11) {
+
+document.write("Tu passes, sans mention !");
+
+
+}else if (moyenne >= 12 && moyenne <= 20) {
+
+document.write("Reçu avec mention ! :)!");
+
+}else if (moyenne < 0 || moyenne > 20) {
+
+document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+
+}
+}else {
+
+document.write( "Vous n\avez pas saisi de nombre !");
+
+}
+
+
+if (isNaN(moyenne)) { // si un nombre 
+
+document.write( "Vous n\avez pas saisi de nombre !");
+
+ 
+}else {
+
+    if (moyenne >= 0 && moyenne < 10) {
+
+document.write("tu es recalé");
+
+} else if(moyenne >= 10 && moyenne <= 11) {
+
+document.write("Tu passes, sans mention !");
+
+
+}else if (moyenne >= 12 && moyenne <= 20) {
+
+document.write("Reçu avec mention ! :)!");
+
+}else if (moyenne < 0 || moyenne > 20) {
+
+document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+
+}
+
+}
+
+
+
+// Exercice 8
+/* 
+
+Créer un script qui permet de :
+    récuperer un nombre de l'utilsateur, 
+    le nombre doit être différent de 0 et positif
+    vérifier et afficher sur la page si ce nombre ainsi que ceux qui le suivent jusqu'au 10.
+    Si ce n'est pas un nombre :
+        => afficher  "Vous n'avez pas saisi de nombre !"  
+    si un nombre :
+        => si un nombre pair -> affiche " le nombre est pair"
+        => si un nombre impair -> affiche " le nombre est impair"
+
+
+créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10.
+
+
+*/
+
+
+let nbr = prompt('Entrez un nombre');
+
+if (isNaN(nbr)) {
+
+
+document.write("Vous n'avez pas saisi de nombre !");
+}else {
+if (nbr) {
+    document.write('c\'est un nombre');
+}
+}
+
+//Exercice 9
+
+// Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+
+//Exercice 10
+
+/* 
+Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+*/
+
 
     </script>
     
