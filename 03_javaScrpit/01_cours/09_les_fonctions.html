@@ -119,7 +119,7 @@
             Attention : Vérifier si l'utilisateur a bien saisi le prénom et le nom, que le prénom est bien une chaîne de caractères et l'âge est bien un nombre entier.
         */
 
-        // let prenom =prompt(" Bonjour,veuillez saisir votre prénom");
+        // let prenom =prompt(" Bonjour,veuillez saisir votre prénom"); 
         // let age=prompt("Veuillez saisir votre âge")
       
         // function mission(prenom) {
@@ -171,6 +171,24 @@
 
         maFonction3()
         document.write(maVarible); // Affichera 10 même si maVariable n'a pas été déclarée en dehors de ma fonction
+
+        //Depuis ES6 (ECMAScript 6, en 2015), il existe une autre façon d'écrire nos fonctions
+
+        //--------------------------
+        // FONCTION FLÉCHÉE (arrow functions)
+        //--------------------------
+
+        //  sont une syntaxe plus concise pour définir des fonctions 
+        // sont devenues très populaires en raison de leur simplicité et de leur lisibilité
+
+        let fonctionFlechee = (x,y) => {
+            console.log(x + y);
+        };
+
+        // Si la fonction ne prend qu'un seul paramètre, vous pouvez même omettre les parenthèses autour du paramètre :
+        param => {
+            // Corps de la fonction
+        };
 
 
 
