@@ -28,6 +28,7 @@ lesP[0].style.fontWeight = " bold " ;
 
 let titre = document.getElementById("titre");
 console.log(titre);
+titre.style.backgroundColor = " pink "
 
 //selection via classe
 
@@ -71,7 +72,95 @@ lestitres[0].innerHTML = "<em> Ceci est le titre modifié avec JavaScript </em>"
     p.style.textTransform = "uppercase"
 
  }
+ // Selection via queryselector (selecitonne le premier élément trouvé)
 
 
+// La méthode querySelector() retourne le 1er élément trouvé spécifié en paramètres.
+// L'avantage de querySelector c'est qu'il utilise la syntaxe de sélection CSS -> #monId .maClass <balise>.
+ let div = document.querySelector('div');
+ console.log(div);
+ div.style.border = "solid 1px #000"
+
+// Selection via queryselectorAll() (selectionne tous les éléments trouvés)
+// sélectionne toutes les balises en ensemble et retourne un array d'éléments
+
+let query = document.querySelectorAll('.selecteClass');
+console.log(query); // on a 3 paragrapphe qui ont la classe selectClass
+for (let i = 0; i < query.length; i++) {
+  console.log(query[i].innerHTML);
+   
+}
+//La propriété innerText est similaire à innerHTML, mais elle fonctionne avec le texte brut à l'intérieur d'un élément, plutôt qu'avec le HTML. Elle permet d'accéder au texte contenu dans un élément HTML et de le modifier si nécessaire.
+
+let rajout = document.querySelector(".bg-success p");
+rajout.innerHTML = "Je suis là";
+
+// CREATION D'UN NOUVEL ELEMENT
+
+let section = document.querySelector('section');
+// pour créer un élément , nous utilisons la méthode createElement
+// (), puis nous l'intégrons dans le noeud souhaité
+let nouveauParaFin = document.createElement('p');
+
+nouveauParaFin.innerHTML = "<strong> Coucou, je suis ton nouveau paragraphe à la fin de la section </strong>";
+nouveauParaFin.style.color = "red";
+
+section.append(nouveauParaFin);// append() -> insère du contenu à la fin de la section.//append() accepte tous les éléments (balise ou string).
+
+let nouveauParaDebut = document.createElement('p');
+nouveauParaDebut.innerHTML = "<strong> Coucou, je suis ton nouveau paragraphe au début de la section </strong>";
+nouveauParaDebut.style.color = "green";
+
+section.prepend(nouveauParaDebut); // prepend() -> insère du contenu au début de la section
+
+//DEPLACER UN ELEMENT
+
+// pour deplacer un élément il faut 3 paramètres
+   /* 
+      * -> le parent qui vas acceuillir l'élément
+      * -> l'élément à déplacer
+      * -> l'élémént qui vient aprés
+   */
+  let parent = document.querySelector('main');
+  let jeBouge = document.querySelector('h4');
+  let h2 = document.querySelector ('.subtitle');
+
+  parent.insertBefore(jeBouge,h2);
+
+  //SUPPRIMER UN ELEMENT 
+
+  // Pour supprimer un élément, il faut deux paramètres :
+   //Pour supprimer un élément, il faut deux paramètres:
+   /**
+    *  -> le parent
+    * -> l'élément à supprimer
+    */
+
+   let ul = document.querySelector('ul');
+   let li = document.querySelector('ul :nth-child(2)');
+   //let li = document.getElementsByTagName('li)[1];
+   console.log(li)
+  // Pour supprimer, on utilise .removeChild()
+   ul.removeChild(li);
+
+  //CREER UN ATTRIBUT ET SA VALEUR
+
+  //setAttribute() : méthode pour ajouter un nouvel attribut ou changer la valeur d'un attribut existant pour un élément
+   
+  let baliseA = document.querySelector('a');
+  baliseA.setAttribute("attribut", "valeurAttribut"); // je rajoute un atribut à la balise a
+
+  baliseA.setAttribute("href", "01_introduction.html"); // changer la valeur de l'attribut à href
+
+  // Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
+// Ce lien sera de couleur blanche et non souligné.
+let baliseB = document.querySelector('h1');
+baliseB
+// CRÉER UN ATTRIBUT ET SA VALEUR
+// setAttribute() : méthode pour ajouter un nouvel attribut ou changer la valeur d'un attribut existant pour un élément
 
 
+let lesA = document.querySelectorAll('a');
+
+let valeurA = lesA[3].getAttribute('href'); // ici je récupère la valeur de l'attribut href avec le getAttribute()
+console.log(valeurA);

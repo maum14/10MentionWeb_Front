@@ -150,9 +150,9 @@
  
  for (let k=0; k < tab4[0].length; k++){
 
+   document.write (`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
  }
- document.write (`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
-     
+ 
 
  for (let t = 1; t <= 10 ; t++)
  
@@ -227,62 +227,62 @@ Créer un script qui permet de :
 */
 
 
-let moyenne = prompt('Votre moyenne');
+//let moyenne = prompt('Votre moyenne');
 
-if (!isNaN(moyenne)) { // si un nombre 
+// if (!isNaN(moyenne)) { // si un nombre 
 
-if (moyenne >= 0 && moyenne < 10) {
+// if (moyenne >= 0 && moyenne < 10) {
 
-document.write("tu es recalé");
+// document.write("tu es recalé");
 
-} else if(moyenne >= 10 && moyenne <= 11) {
+// } else if(moyenne >= 10 && moyenne <= 11) {
 
-document.write("Tu passes, sans mention !");
-
-
-}else if (moyenne >= 12 && moyenne <= 20) {
-
-document.write("Reçu avec mention ! :)!");
-
-}else if (moyenne < 0 || moyenne > 20) {
-
-document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
-
-}
-}else {
-
-document.write( "Vous n\avez pas saisi de nombre !");
-
-}
+// document.write("Tu passes, sans mention !");
 
 
-if (isNaN(moyenne)) { // si un nombre 
+// }else if (moyenne >= 12 && moyenne <= 20) {
 
-document.write( "Vous n\avez pas saisi de nombre !");
+// document.write("Reçu avec mention ! :)!");
+
+// }else if (moyenne < 0 || moyenne > 20) {
+
+// document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+
+// }
+// }else {
+
+// document.write( "Vous n\avez pas saisi de nombre !");
+
+// }
+
+
+// if (isNaN(moyenne)) { // si un nombre 
+
+// document.write( "Vous n\avez pas saisi de nombre !");
 
  
-}else {
+// }else {
 
-    if (moyenne >= 0 && moyenne < 10) {
+//     if (moyenne >= 0 && moyenne < 10) {
 
-document.write("tu es recalé");
+// document.write("tu es recalé");
 
-} else if(moyenne >= 10 && moyenne <= 11) {
+// } else if(moyenne >= 10 && moyenne <= 11) {
 
-document.write("Tu passes, sans mention !");
+// document.write("Tu passes, sans mention !");
 
 
-}else if (moyenne >= 12 && moyenne <= 20) {
+// }else if (moyenne >= 12 && moyenne <= 20) {
 
-document.write("Reçu avec mention ! :)!");
+// document.write("Reçu avec mention ! :)!");
 
-}else if (moyenne < 0 || moyenne > 20) {
+// }else if (moyenne < 0 || moyenne > 20) {
 
-document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+// document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
 
-}
+// }
 
-}
+// }
 
 
 
@@ -306,49 +306,49 @@ créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le
 */
 
 
-let nbr = prompt('Entrez un nombre');
+//let nbr = prompt('Entrez un nombre');
 
-if (isNaN(nbr)) {
+// if (isNaN(nbr)) {
 
-document.write("Vous n'avez pas saisi de nombre !");
-}else {
+// document.write("Vous n'avez pas saisi de nombre !");
+// }else {
 
-    if (nbr <= 0) {
-        document.write(' le nombre doit être différent de 0 et positif');
+//     if (nbr <= 0) {
+//         document.write(' le nombre doit être différent de 0 et positif');
 
-    }else {
-        while(nbr <= 10){
-            if (nbr % 2 == 0) {
-                document.write("le nombre est pair");
+//     }else {
+//         while(nbr <= 10){
+//             if (nbr % 2 == 0) {
+//                 document.write("le nombre est pair");
                 
-            }else {
-                document.write("le nombre est impair")
-            }
-            nbr++
-        }
-    }
-}
-// Correction 2
+//             }else {
+//                 document.write("le nombre est impair")
+//             }
+//             nbr++
+//         }
+//     }
+// }
+// // Correction 2
 
-if (isNaN(nbr)) {        
-      document.write("Vous n'avez pas saisi de nombre !");
-    }
-    else {
-      if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0 ) {
-        document.write("Le nombre doit être différent de 0 et positif");
-      }
-      else {
-        while (nbr <= 10) {
-          if (nbr % 2 == 0) {
-            document.write(`Le nombre ${nbr} est pair <br>`);
-          }
-          else {
-            document.write(`Le nombre ${nbr} est impair <br>`);
-          }
-          nbr++
-        }
-      }
-    }
+// if (isNaN(nbr)) {        
+//       document.write("Vous n'avez pas saisi de nombre !");
+//     }
+//     else {
+//       if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0 ) {
+//         document.write("Le nombre doit être différent de 0 et positif");
+//       }
+//       else {
+//         while (nbr <= 10) {
+//           if (nbr % 2 == 0) {
+//             document.write(`Le nombre ${nbr} est pair <br>`);
+//           }
+//           else {
+//             document.write(`Le nombre ${nbr} est impair <br>`);
+//           }
+//           nbr++
+//         }
+//       }
+//     }
 
 //Exercice 9
 
@@ -357,12 +357,12 @@ if (isNaN(nbr)) {
 let reponse = '';
 let i = 1;
 
-while (reponse.toLowerCase() !== "oui"&& reponse.toLowerCase()!== "non") {
+// while (reponse.toLowerCase() !== "oui"&& reponse.toLowerCase()!== "non") {
 
-    reponse=prompt("Alors on joue au ni oui ni non ?!")
-    document.write(" La "+ i +" fois vous avez inséré"+ reponse + "<br>");
+//     reponse=prompt("Alors on joue au ni oui ni non ?!")
+//     document.write(" La "+ i +" fois vous avez inséré"+ reponse + "<br>");
 
-}
+// }
 document.write("Désolé vous avez perdu !");
 
 
@@ -376,20 +376,20 @@ il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 
 */
 
 
-    for (let i = 1; i <= 20; i++) {
-      if (i % 3 == 0 && i % 5 != 0 ) {
-        document.write("Grala <br>");
-      }
-      else if (i % 5 == 0 && i % 3 != 0) {
-        document.write("Bu <br>");
-      }
-      else if (i % 3 == 0 && i % 5 == 0) {
-        document.write("GralaBu <br>");
-      }
-      else {
-        document.write(`${i} <br>`);
-      }
-    }
+    // for (let i = 1; i <= 20; i++) {
+    //   if (i % 3 == 0 && i % 5 != 0 ) {
+    //     document.write("Grala <br>");
+    //   }
+    //   else if (i % 5 == 0 && i % 3 != 0) {
+    //     document.write("Bu <br>");
+    //   }
+    //   else if (i % 3 == 0 && i % 5 == 0) {
+    //     document.write("GralaBu <br>");
+    //   }
+    //   else {
+    //     document.write(`${i} <br>`);
+    //   }
+    // }
 
 
     //Exercice 11
@@ -400,21 +400,70 @@ il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 
             x fois, par rapport au 2eme nombre
             Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
         */
-            let myArray = new Array;
+            let myArray = [];
+            console.log (myArray);
+
             function nombre (nbr1,nbr2) {
-              nbr1.push("")
-              
+
+              for (let i = 0; i < nbr2; i++){
+
+                myArray.push(nbr1);
+              }
+              document.write("myArray = [" + myArray +" ] <br>");
+              myArray = [];
+            
             }
 
+            nombre(5,3);
+            nombre(6,8);
+
+            let maFonction = (nb1,nb2)=> {
+              let table = [];
+              for (let i = 0; i < nb2; i++) {
+                table.push(nb1);
+              }
+              document.write("myArray = ["+ table +"] <br>")
+            }
+            maFonction(10,20);
+            maFonction(9,7);
 
        
-//Exercice 12s
+//Exercice 12
 
         /*
             Créez un array avec plusieurs nombres à l'intérieur
 
             Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
         */
+
+            let tab = [50, 7, 20, 60, 10];
+
+            let sommeTable = ()=> {
+              let somme = 0;
+              for (let i = 0; i < tab.length; i++){
+                
+                somme+= tab[i]; // sommme = somme + nombre[i]
+              }
+              document.write(somme + "<br>");
+            }
+            sommeTable();
+
+
+            // 2eme façon
+       let monArray = function(nombre){
+        let k = 0;
+        for (let i = 0; i < nombre.length; i++) {
+           k+= nombre[i]; // k = k+ nombre[i]
+
+           // k = 0 + 5
+           // k = 5 + 40
+           // k = 45 + 15
+
+        }
+
+        return somme; // la fonction retourne une valeur : la somme des éléments dans le tableau    
+       }
+       document.write(monArray([5,40,15,60]));
 
 
 
@@ -426,23 +475,41 @@ il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 
             A l'aide de ce tableau et d'une boucle:
         */
 
-        // const clients = [
-        //     {
-        //         firstname: "Claire",
-        //         age: 28,
-        //     },
-        //     {
-        //         firstname: "Max",
-        //         age: 32,
-        //     },
-        //     {
-        //         firstname: "Léo",
-        //         age: 23,
-        //     },
-        // ];
+        let clients = [
+               // 0
+              { 
+                firstname: "Claire",
+                age: 28,
+               // 1
+            },
+            {
+                firstname: "Max",
+                age: 32,
+              //  2
+            },
+            {
+                firstname: "Léo",
+                age: 23,
+            },
+        ];
 
         // Calculez et affichez dans le terminal la somme des âges.
 
+        let totalAge = 0;
+
+        //for (let client of clients) {
+
+          //totalAge += cleint.age // totalAge = totalAge + client.age
+
+       // }
+       // document.write(`la somme des âgees : ${totalAge}`);
+ 
+       //2ème façon de faire : boucle for
+
+       for (let i = 0; i < clients.length; i++) {
+        let element = array[i];
+        
+       }
 
 
 
@@ -455,20 +522,55 @@ il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 
             ex: testEmail('julien.gmail.com') => false
         */
 
-        function test(){
-          let email=prompt("Veuillez saisir votre email")
+        // function test(){
+        //   let email=prompt("Veuillez saisir votre email")
 
-            if (email !="julien.gmail.com") {
+        //     if (email !="julien.gmail.com") {
               
-            } else {
-               document.write =("")
+        //     } else {
+        //        document.write =("")
               
-            } 
+        //     } 
         
-        }
+        // }
 
+        let email = prompt(`Entrez votre adressse email !`);
+        // function verifEmail (){
+            
+        //   let i = 0
 
+        //   while (i < email.length){
+            
+        //     if (email[i]=== "@") {
 
+        //     }
+
+        //        document.write("true");
+
+        //      } else {
+        //        document.write("false");
+
+        //      }
+        //      i++;
+        //   }
+        // // }
+        // verifEmail(email);
+
+          // avec la function index off
+
+          function verif(email) {
+            let index = (email).indexof("@")
+            if (index === -1) {
+
+              document.write("false")
+
+            } else {
+              document.write("true");
+              
+            }
+
+          }
+          verif(email)
 
     </script>
     
