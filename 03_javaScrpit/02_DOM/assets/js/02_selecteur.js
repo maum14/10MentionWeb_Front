@@ -150,12 +150,44 @@ section.prepend(nouveauParaDebut); // prepend() -> insère du contenu au début 
   let baliseA = document.querySelector('a');
   baliseA.setAttribute("attribut", "valeurAttribut"); // je rajoute un atribut à la balise a
 
-  baliseA.setAttribute("href", "01_introduction.html"); // changer la valeur de l'attribut à href
+  baliseA.setAttribute("href", "01_introduction.html"); // changer la valeur de l'attribut href
 
   // Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
 // Ce lien sera de couleur blanche et non souligné.
 let baliseB = document.querySelector('h1');
-baliseB
+let docJs = document.createElement('a');
+docJs.innerHTML = "Lien vers la documentation";
+docJs.style.color = "white";
+docJs.style.textDecoration = "none";
+
+baliseB.append(docJs);
+docJs.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/JavaScript");
+docJs.setAttribute("target","_blank")
+
+// 2éme façon 
+container.innerHTML = "<a> Cours JavaScript </a>";
+let element = document.querySelector('h1 a');
+element.setAttribute('href', 'le lien');
+element.setAttribute("target", '_blank');
+element.style.color= "white";
+element.style.textDecoration="none";
+
+
+//3ème façon
+
+container.innerHTML="<a a href = ' # 'target='_blank' > Cour JavaScript </a>";
+let element = document.querySelector('h1 a');
+element.style.color= "white";
+element.style.textDecoration= "none";
+
+
+
+
+
+
+
+
+
 // CRÉER UN ATTRIBUT ET SA VALEUR
 // setAttribute() : méthode pour ajouter un nouvel attribut ou changer la valeur d'un attribut existant pour un élément
 
