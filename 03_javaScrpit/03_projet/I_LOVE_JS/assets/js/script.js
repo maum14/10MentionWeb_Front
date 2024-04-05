@@ -37,6 +37,9 @@ function changeMode(){
     switchBox.classList.toggle('switch-change');
 }   
 
+// ------------------------------------Partie video ------------------------------------//
+           // ------------------------Icone smile -------------------------------------//
+
 let icone = document.querySelector(".bloc-btn i");
 
 icone.addEventListener('click',cliqueMode);
@@ -53,5 +56,28 @@ function cliqueMode(){
         
     }
 }
+  // ------------------------- bouton abonnez-vous -------------------------------------//
+
+let btnAbonne = document.querySelector('.btn-abonner');
+
+btnAbonne.addEventListener('click', ()=>{ 
+    if (btnAbonne.innerHTML === 'Abonnez-vous') {
+        btnAbonne.innerHTML == 'Abonné';        
+    } else {
+        btnAbonne.innerHTML === 'Abonnez-vous';
+    }
+})   
+
+
+/* ************************* cookies *********************************** */
+
+let btnCookies = document.querySelector('.btn-success');
+let cookies = document.querySelector('.cookies');
+
+btnCookies.addEventListener('click', ()=> {
+    cookies.style.opacity ='0';
+
+})
+
 
 
