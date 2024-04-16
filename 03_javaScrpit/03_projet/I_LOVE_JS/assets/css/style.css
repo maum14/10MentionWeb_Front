@@ -80,7 +80,7 @@
 
     background-color: 
 #CBE6FF;
-    height: 100vh;
+    
 }
 
 .banniere-titre {
@@ -189,6 +189,67 @@ h1 {
     background-color: blue;
  }
 
+
+/*********** carousel **********************/
+
+.outils > div {
+    background-color: #1E2337;
+    color: #fff;
+    padding: 2rem;
+}
+.slider {
+    background-image: url(../img/concrete_seamless.png);
+    width: 100%;
+    padding: 10rem;
+}
+
+.slider img {
+    margin-top: 5rem;
+    border:20px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 16px 1px rgb(0,0,0,0.75);
+    transform: rotate(-8deg);
+}
+
+/**************** loader *****************/
+
+#loader {
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #CBE6FF;
+    position: fixed;
+    z-index: 1;
+}
+
+.icon-loader {
+    width: 100px;
+    height: 100px;
+    border:10px solid #61b3ff;
+    border-top: 10px solid #1E2337;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.2);
+    animation-name: loader; /* Le nom de la keyframe*/
+    animation-duration: 1s;/* l'animation dure 1 seconde*/
+    animation-iteration-count: infinite; /*elle se répéte à l'infinie*/
+    animation-timing-function: linear;/*La progression de l'animation pendant la duréé de chaque cycle */
+    
+}
+
+.hideLoader {
+    display: none !important;
+}
+@keyframes loader {
+
+    /* début de l'animarion*/
+    0%{
+        transform: rotate(0deg);
+    }
+    /*Fin de l'animation*/
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 /**************** footer *****************/
 
