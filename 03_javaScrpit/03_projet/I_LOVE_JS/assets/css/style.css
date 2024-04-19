@@ -250,6 +250,19 @@ h1 {
         transform: rotate(360deg);
     }
 }
+/************* keyboard ********************/
+
+.mario {
+    position: relative;
+}
+
+#mario {
+    position: absolute;
+    left: 30px
+    
+
+}
+
 
 /**************** footer *****************/
 
