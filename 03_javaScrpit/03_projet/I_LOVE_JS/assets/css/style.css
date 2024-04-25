@@ -315,6 +315,34 @@ form{
     position: absolute;
     bottom: 50px;
     left: 105px;
+    display: none;
+}
+
+.form-control small {
+    visibility:hidden;
+}
+
+.form-control.error small {
+    color: red;
+   visibility: visible;
+
+}
+.form-control.error input {
+  border: 1px solid red;
+  
+}
+.form-control.error .fa-exclamtion {
+    color: red;
+   visibility: visible;
+
+}
+
+.form-control.success input{
+    border-color:  green !important;
+}
+.form-control.success .fa-circle-check{
+    color: green;
+    visibility: visible;
 }
 
 button{
@@ -325,6 +353,10 @@ button{
     padding: 10px;
     font-size: 1.6rem;
     width: 100%;
+}
+
+.apparition {
+    display: block !important;
 }
 /**************** footer *****************/
 
